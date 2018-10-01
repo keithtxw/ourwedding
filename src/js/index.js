@@ -1,6 +1,6 @@
 import _ from "lodash";
 import "jquery";
-import "./styles/main.css";
+import "../styles/main.css";
 
 function init() {
 
