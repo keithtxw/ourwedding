@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <div>Hello</div>
-    <div id="map"></div>
-    <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC-gf6dWwGkmYisLJiPPY_cSnI8pzsHSw&callback=initMap"></script>
-  <script type="text/javascript" src="bundle.js"></script></body>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+   <div class="floating-nav">
+      <div class="nav-body">
+         NAV
+      </div>
+   </div>
+   <section id="hero">
+      <h1>15 December</h1>
+   </section>
+
+   <section id="details">
+      <div class="section-content">
+         <h2>The Details</h2>
+      </div>
+      <div id="map"></div>
+   </section>
+
+   <section id="gettingthere">
+      <div class="section-content">
+         <h2>Getting There</h2>
+         <div class="h-content">
+            <div class=content-item>
+               <i class="icon ion-md-train"></i>
+               <p>The nearest MRT station is the Nicoll Highway (CC5) station. Upon alighting take exit A.</p>
+            </div>
+            <div class=content-item>
+               <i class="icon ion-md-bus"></i>
+               <p>The bus stop directly outside the hotel (B01529) has services, 961, 980, 100, 107M and 107.</p>
+            </div>
+            <div class=content-item>
+               <i class="icon ion-md-car"></i>
+               <p>The hotel carpark. Please remember to claim the complimentary parking ticket at the reception.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="sharemoments">
+      <div class="section-content">
+         <h2>Sharing The Moment</h2>
+         <p>We are certain you will be snapping really nice pictures of the event and yourselves. Do share them with us
+            by using this tag.</p>
+         <h2>#keithxclaire</h2>
+      </div>
+   </section>
+
+   <footer>
+      &copy; Keith and Claire 2018.
+   </footer>
+
+   <!-- <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC-gf6dWwGkmYisLJiPPY_cSnI8pzsHSw&callback=initMap"></script> -->
+<script type="text/javascript" src="bundle.js"></script></body>
+
 </html>

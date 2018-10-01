@@ -3,7 +3,7 @@ import "jquery";
 import "../styles/main.css";
 
 function init() {
-
+   
 }
 
 var map;
