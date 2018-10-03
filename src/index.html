@@ -2,62 +2,116 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 
 <body>
-   <div class="floating-nav">
-      <div class="nav-body">
-         NAV
-      </div>
-   </div>
-   <section id="hero">
-      <h1>15 December</h1>
-   </section>
+	<div class="floating-nav-section">
+		<div class="navbar">
+			<ul>
+				<li><a href="#hero">1</a></li>
+				<li><a href="#details">2</a></li>
+				<li><a href="#gettingthere">3</a></li>
+				<li><a href="#sharemoments">4</a></li>
+			</ul>
+		</div>
+	</div>
+	<section id="hero">
+		<span class="hero-name">Keith</span>
+		<span class="hero-name">+</span>
+		<span class="hero-name">Claire</span>
+		<span class="hero-date">15 Dec 2018</span>
+	</section>
 
-   <section id="details">
-      <div class="section-content">
-         <h2>The Details</h2>
-      </div>
-      <div id="map"></div>
-   </section>
+	<section id="daysleft">
+		<div class="section-content">
+			<span id="days"></span>
+			<div>
+				<span id="bigday"></span>
+				<span id="excited"></span>
+			</div>
+		</div>
+	</section>
 
-   <section id="gettingthere">
-      <div class="section-content">
-         <h2>Getting There</h2>
-         <div class="h-content">
-            <div class=content-item>
-               <i class="icon ion-md-train"></i>
-               <p>The nearest MRT station is the Nicoll Highway (CC5) station. Upon alighting take exit A.</p>
-            </div>
-            <div class=content-item>
-               <i class="icon ion-md-bus"></i>
-               <p>The bus stop directly outside the hotel (B01529) has services, 961, 980, 100, 107M and 107.</p>
-            </div>
-            <div class=content-item>
-               <i class="icon ion-md-car"></i>
-               <p>The hotel carpark. Please remember to claim the complimentary parking ticket at the reception.</p>
-            </div>
-         </div>
-      </div>
-   </section>
+	<section id="details">
+		<div class="section-content">
+			<h2>The Details</h2>
+			<div class="details-content">
+				<div class="address-box">
+					<span class="details-heading">PARKROYAL on Beach Road</span>
+					<span>7500 Beach Road, Singapore 199591</span>
+					<span>Grand Ballroom, Level 1</span>
+				</div>
+				<div class="event-box-widescreen">
+					<div class="event">
+						<span class="details-heading">7:00pm</span>
+						<span>Cocktail reception</span>
+					</div>
+					<div class="event">
+						<span class="details-heading">7:30pm</span>
+						<span>Dinner banquet</span>
+					</div>
+				</div>
 
-   <section id="sharemoments">
-      <div class="section-content">
-         <h2>Sharing The Moment</h2>
-         <p>We are certain you will be snapping really nice pictures of the event and yourselves. Do share them with us
-            by using this tag.</p>
-         <h2>#keithxclaire</h2>
-      </div>
-   </section>
+				<div class="event-box">
+					<div class="event">
+						<span><strong>Reception</strong></span>
+						<span>7:00PM</span>
+					</div>
+					<div class="event">
+						<span><strong>Dinner</strong></span>
+						<span>7:30PM</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="map"></div>
 
-   <footer>
-      &copy; Keith and Claire 2018.
-   </footer>
+	<section id="gettingthere">
+		<div class="section-content">
+			<h2>Getting There</h2>
+			<div class="h-content">
+				<div class=content-item>
+					<div>
+						<span class="transport-header">By MRT</span>
+						<span>1. Take Exit A at Nicoll Highway MRT.</span>
+						<span>2. Then walk 5 min along Nicoll Highway.</span>
+					</div>
+				</div>
+				<div class=content-item>
+					<span class="transport-header">By Bus</span>
+					<span>The bus stop directly outside the hotel (B01529) has services, 961, 980, 100,
+						107M and 107.</span>
+				</div>
+				<div class=content-item>
+					<span class="transport-header">By Car</span>
+					<span>The hotel carpark. Please remember to claim the complimentary parking ticket at
+						the reception.</span>
+				</div>
+			</div>
+		</div>
+	</section>
 
-   <!-- <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC-gf6dWwGkmYisLJiPPY_cSnI8pzsHSw&callback=initMap"></script> -->
+	<section id="sharemoments">
+		<div class="section-content">
+			<h2>Share with us!</h2>
+			<div class="hashtag-box">
+				<span>We know you will be taking awesome pictures/videos during the wedding.</span>
+				<span>A photobooth will also be available on site for capturing wonderful moments.</span>
+				<span><strong>Share these pictures/videos with us by using this tag.</strong></span>
+				<span id="hashtag">#keithxclaire</span>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<span>&copy; Keith and Claire 2018.</span>
+	</footer>
+
+	<script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC-gf6dWwGkmYisLJiPPY_cSnI8pzsHSw&callback=initMap"></script>
 </body>
 
 </html>
