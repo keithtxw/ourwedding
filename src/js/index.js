@@ -1,9 +1,11 @@
 import _ from "lodash";
 import "jquery";
+import "../js/scroll.js";
 import "../styles/main.css";
 
 function init() {
-   
+   // Set display for days left
+   initDaysLeftDisplay();
 }
 
 var map;
@@ -29,6 +31,49 @@ function initMap() {
    };
 
    marker = new google.maps.Marker(markerOptions);
+}
+
+function initDaysLeftDisplay() {
+   var today = new Date();
+   var wedding = new Date("12/15/2018");
+   var timeDiff = Math.abs(today.getTime() - wedding.getTime());
+   var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+   var daysLeftNumberText;
+   var daysLeftText;
+   var subText;
+
+   switch (true) {
+      case (diffDays > 1):
+         daysLeftNumberText = diffDays;
+         daysLeftText = "Days left to our big day.";
+         subText = "We are really excited to have you there!";
+         break;
+      case (diffDays === 1):
+         daysLeftNumberText = diffDays;
+         daysLeftText = "Day left to our big day.";
+         subText = "Are you excited as we are? See you there!";
+         break;
+      case (diffDays === 0):
+         daysLeftNumberText = undefined;
+         daysLeftText = "Today is the big day!";
+         subText = "See you there at 7:00PM.";
+         break;
+      default:
+         daysLeftNumberText = undefined;
+         daysLeftText = "Thank you for coming!";
+         subText = "It meant alot for us.";
+         break;
+   }
+
+   if (daysLeftNumberText) {
+      $("#days").text(daysLeftNumberText);
+   } else {
+      $("#days").hide();
+   }
+
+   $("#bigday").text(daysLeftText);
+   $("#excited").text(subText);
 }
 
 init();
