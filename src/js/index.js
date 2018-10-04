@@ -10,7 +10,7 @@ function init() {
 
 var map;
 var marker;
-function initMap() {
+var initMap = () => {
    var position = {
       lat: 1.300193,
       lng: 103.860676,
