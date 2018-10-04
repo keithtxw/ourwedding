@@ -4,13 +4,13 @@ import "../js/scroll.js";
 import "../styles/main.css";
 
 function init() {
-   // Set display for days left
    initDaysLeftDisplay();
+   initGoogleMapScript();
 }
 
 var map;
 var marker;
-var initMap = () => {
+function initMap() {
    var position = {
       lat: 1.300193,
       lng: 103.860676,
@@ -31,6 +31,16 @@ var initMap = () => {
    };
 
    marker = new google.maps.Marker(markerOptions);
+}
+
+function initGoogleMapScript() {
+   var script = document.createElement("script");
+   script.type = "text/javascript";
+   script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDC-gf6dWwGkmYisLJiPPY_cSnI8pzsHSw&callback=initMap";
+   script.async = "async";
+   script.defer = "defer";
+
+   $("body").append(script);
 }
 
 function initDaysLeftDisplay() {
