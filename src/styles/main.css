@@ -343,11 +343,25 @@ footer span {
 .h-content {
    display: flex;
    flex-direction: row;
+   margin-bottom: 30px;
 }
 
 .h-content .content-item {
    margin: 0px 15px;
-   text-align: center;
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   background-color: white;
+   padding: 15px;
+   border: 1px solid #dfe6ed;
+}
+
+.h-content .content-item ul {
+   margin-left: -15px;
+}
+
+.h-content .content-item ul li {
+   list-style-type: square;
 }
 
 .h-content .content-item span {
@@ -371,12 +385,11 @@ footer span {
       flex-direction: column;
    }
    .h-content .content-item {
-      align-items: center;
       margin: 15px 0;
       text-align: left;
       background-color: white;
       padding: 15px;
-      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+      border: 1px solid #dfe6ed;
    }
    .h-content .content-item i {
       margin-right: 20px;
