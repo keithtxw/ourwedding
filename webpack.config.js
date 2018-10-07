@@ -38,7 +38,8 @@ module.exports = {
       new CleanWebpackPlugin(['dist']),
       new HtmlWebpackPlugin({
          title: "KeithxClaire",
-         template: "src/index.html"
+         template: "src/index.html",
+         inject: "head"
       })
    ],
    mode: "production",
