@@ -125,7 +125,7 @@ footer span {
 }
 
 .floating-nav-section .navbar {
-   padding: 20px 25px;
+   padding: 15px 25px;
    background-color: #fff;
    display: flex;
    justify-content: center;
@@ -142,6 +142,18 @@ footer span {
 .floating-nav-section .navbar ul li {
    display: inline-block;
    margin: 0 25px;
+}
+
+.floating-nav-section .navbar ul li a {
+   text-decoration: none;
+   font-size: 1.5em;
+   color: #292929;
+}
+
+.floating-nav-section .navbar ul li a:hover,
+.floating-nav-section .navbar ul li a:active,
+.floating-nav-section .navbar ul li a:focus {
+   color: #daa520;
 }
 
 /* ========================================================================== */
@@ -378,6 +390,7 @@ footer span {
 
 .h-content .content-item ul {
    margin-left: -15px;
+   margin-top: 0px;
 }
 
 .h-content .content-item ul li {
