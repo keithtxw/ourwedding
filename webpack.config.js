@@ -17,7 +17,16 @@ module.exports = {
          },
          {
             test: /\.(png|svg|jpg|gif)$/,
-            use: ["file-loader"],
+            use: [
+               {
+                  loader: "file-loader",
+                  options: {
+                     name: "[name].[ext]", // Otherwise file-loader will use some random hash
+                     outputPath: "img/",
+                     publicPath: "img/"
+                  }
+               }
+            ],
          }
       ]
    },
