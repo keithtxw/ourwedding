@@ -184,6 +184,26 @@ footer span {
 
 /* ========================================================================== */
 
+/* PICTURES
+/* ========================================================================== */
+
+.wedding-image {
+   display: flex;
+   height: 100vh;
+   background-image: url("../img/wedding-1.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+@media (max-width: 767.98px) {
+   .wedding-image {
+      height: 300px;
+   }
+}
+
+/* ========================================================================== */
+
 /* DETAILS
 /* ========================================================================== */
 
