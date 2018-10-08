@@ -39,7 +39,6 @@ module.exports = {
       new HtmlWebpackPlugin({
          title: "KeithxClaire",
          template: "src/index.html",
-         inject: "head"
       })
    ],
    mode: "production",

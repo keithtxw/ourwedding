@@ -5,8 +5,8 @@ import "../styles/main.css";
 // Images import
 import "../img/wedding-1.jpg";
 function init() {
-	initDaysLeftDisplay();
 	initGoogleMapScript();
+	initDaysLeftDisplay();
 }
 
 var map;
