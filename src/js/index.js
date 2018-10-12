@@ -4,13 +4,19 @@ import "../js/scroll.js";
 import "../styles/main.css";
 // Images import
 import "../img/wedding-1.jpg";
+import "../img/carpark.png";
+
+// Globals
+var map;
+var marker;
+
 function init() {
 	initGoogleMapScript();
 	initDaysLeftDisplay();
+	initModal();
 }
 
-var map;
-var marker;
+
 function initMap() {
 	var position = {
 		lat: 1.300193, lng: 103.860676,
@@ -72,6 +78,33 @@ function initDaysLeftDisplay() {
 	}
 	$("#bigday").text(daysLeftText);
 	$("#excited").text(subText);
+}
+
+function initModal() {
+	$(".modal").css("display", "none");
+
+	// Launch modal
+	$("#seeCarparkDirections").click(() => {
+		$(".modal").css("display", "flex");
+	});
+
+	// Dismiss modal
+	var dismissModalFn = () => {
+		var modalStyle = $(".modal").css("display");
+
+		if (modalStyle === "flex") {
+			$(".modal").css("display", "none");
+		}
+	}
+
+	// Triggers to dismiss modal
+	$(".modal").click(() => {
+		dismissModalFn();
+	});
+
+	$("#modal-close-btn").click(() => {
+		dismissModalFn();
+	});
 }
 
 init();

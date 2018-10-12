@@ -408,6 +408,11 @@ footer span {
    margin: 0;
 }
 
+.h-content .content-item span a {
+   cursor: pointer;
+   color: #0082d3;
+}
+
 .h-content .content-item i {
    font-size: 3em;
 }
@@ -485,10 +490,73 @@ footer span {
 /* MODAL
  /* ========================================================================= */
 
-/* .modal {
-   position: absolute;
+.modal {
+   position: fixed;
    top: 0;
    left: 0;
-   background-color: rgba(0, 0, 0, 0.4);
-   z-index: 200;
-} */
+   background-color: rgba(0, 0, 0, 0.6);
+   z-index: 300;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.modal-body {
+   width: 70%;
+   background-color: white;
+   box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.2);
+   padding: 10px;
+   padding-top: 0;
+   z-index: 500;
+   display: flex;
+   flex-direction: column;
+   /* animations */
+   animation: modal-expand 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.modal-body .modal-close {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.modal-body .modal-close a {
+   font-size: 1.5em;
+}
+
+.modal-body .modal-body-img {
+   width: 100%;
+   height: auto;
+}
+
+@media (max-width: 767.98px) {
+   .modal-body {
+      width: 80%;
+   }
+}
+
+/* ========================================================================= */
+
+/* ANIMATIONS
+ /* ========================================================================= */
+
+@keyframes modal-expand {
+   0% {
+      transform: scale(0);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+@keyframes modal-dismiss {
+   0% {
+      transform: scale(1);
+      opacity: 1;
+   }
+   100% {
+      transform: scale(0);
+      opacity: 0;
+   }
+}
