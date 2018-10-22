@@ -4,7 +4,7 @@ import "../js/scroll.js";
 import "../styles/main.css";
 // Images import
 import "../img/wedding-1.jpg";
-import "../img/carpark.png";
+import "../img/carpark-2.png";
 
 // Globals
 var map;
